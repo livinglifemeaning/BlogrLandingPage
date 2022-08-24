@@ -1,0 +1,81 @@
+@import "./variables.css"; 
+
+.title{
+    font-family: var(--f-Overpass);
+  }
+  
+  h1.title{
+    color: #fff; 
+    text-align: center; 
+    font-size: 2.1rem; 
+    line-height: 2.7rem; 
+    margin-top: 5rem; 
+    }
+    
+
+    .btn {
+        font-family: var(--f-Overpass); 
+        border: 0; 
+         padding: 1rem; 
+         border-radius: 30px; 
+         font-size: 1.1rem; 
+         font-weight: 600; 
+         cursor: pointer; 
+         
+    }
+
+    .btn:active{
+        transform: scale(.96);
+    }
+    
+    .btn.heading{
+        background-color: #fff; 
+        color:var(--c-red-mid66-100); 
+    }
+    
+    .btn.heading:hover{
+        background-color: var(--c-red-light74-100); 
+        color: #fff; 
+    }
+    
+    .btn.nav{
+        background: linear-gradient(
+            90deg,
+            rgba(255, 143, 112, 1) 0%,
+            rgba(255, 61, 84, 1) 100%
+          );
+          color: #fff;
+          width: 8rem; 
+    }
+    
+    .btn.nav:hover{
+        background: var(--c-red-light74-100); 
+        color: #fff; 
+    }
+    .btn.transparent{
+        background-color: transparent;
+        border: solid .1rem white; 
+        color: #fff; 
+    }
+    .btn.transparent:hover{
+        color: var(--c-red-light74-100); 
+        background-color: #fff; 
+    }
+    
+    @media (min-width: 750px) {
+        h1.title{
+            font-size: 4rem; 
+            line-height: 4.7rem; 
+        }
+        .btn{
+            width: 9rem; 
+        }
+        .btn.nav {
+            background: none; 
+            background-color: #fff; 
+            color: rgba(255, 61, 84, 1); 
+         
+        }
+    }
+    
+    

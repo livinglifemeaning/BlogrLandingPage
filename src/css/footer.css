@@ -1,0 +1,45 @@
+@import "./variables.css";
+
+.footer {
+  background-color: var(--c-blue-dark21-17);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-family: var(--f-Overpass);
+  text-align: center; 
+  margin-top: 5rem; 
+  border-top-right-radius: 60px;
+  padding: 5rem 0; 
+}
+
+.navBox p {
+  color: #fff;
+  margin-bottom: 1rem; 
+  font-weight: 900; 
+}
+
+.sublinks{
+    padding: 0; 
+    list-style-type: none;
+    color: var(--c-blue-light79-2); 
+    display: flex; 
+    flex-direction: column; 
+    gap: .3rem; 
+}
+
+.sublinks li:hover{
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+@media (min-width: 750px) {
+    .footer{
+        flex-direction: row; 
+        justify-content: space-around;
+        text-align: left; 
+        align-items: flex-start; 
+    }
+
+}

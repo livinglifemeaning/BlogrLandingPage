@@ -1,0 +1,210 @@
+@import './variables.css'; 
+h3{
+    color: var(--c-blue-dark24-49); 
+    text-align: center;
+    font-size: 1.7rem; 
+    font-weight: 900; 
+}
+.sectionOne h3{
+    margin-top: 5rem; 
+    margin-bottom: 2rem; 
+}
+
+.flexContainer img{
+    width: 100%; 
+}
+
+.textCard{
+    padding: 0 2rem; 
+    text-align: center; 
+}
+.textCard h3{
+    margin-top: 3rem; 
+    margin-bottom: 1rem; 
+}
+.textCard p{
+    font-family: var(--f-Ubuntu); 
+    color: var(--c-blue-dark34-13); 
+    line-height: 1.5rem; 
+    font-size: .9rem; 
+}
+
+.sectionTwo{
+    margin-top: 20rem; 
+    position: relative; 
+    padding: 8rem 1rem 6rem ; 
+    margin-bottom: 3rem; 
+}
+.sectionTwo .imgCard{
+    position: absolute; 
+    top: -220px;  
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 400px; 
+}
+.sectionTwo p, .sectionTwo h3{
+    color: #fff; 
+}
+
+.sectionTwo .title.big{
+    font-size: 2.2rem; 
+}
+
+.animationBox{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    background-color: var(--c-blue-dark32-23);
+    z-index: -1; 
+}
+.shapes{
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.innerCircle{
+    position: absolute; 
+    top: -10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 220px; 
+    height: 220px; 
+    border-radius: 50%; 
+    background-color: hsla(236, 20%, 44%, .6); 
+    animation: animateCircles 3s infinite ease-in-out;
+}
+
+.outerCircle{
+    position: absolute; 
+    top: -20%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 50%; 
+    border-color: hsla(0, 100%, 100%, .5); 
+    border-style: solid;
+    
+}
+
+.outerCircle.one{
+    width: 300px; 
+    height: 300px; 
+    border-width: 1px; 
+    animation: animateCircles 3s infinite ease-in-out;
+}
+
+.outerCircle.two{
+    width: 380px; 
+    height: 380px; 
+    border-width: .005rem;
+    animation: animateCircles 3s infinite ease-in-out;
+}
+
+@keyframes animateCircles {
+	0% {
+		transform: translateX(-50%) scale(1); 
+	}
+	50% {
+		transform: translateX(-50%)  scale(1.2); 
+	}
+	100% {
+		transform:translateX(-50%) scale(1); 
+	}
+}
+@media (min-width: 750px) {
+    
+    .flexContainer{
+        display: flex; 
+        
+    }
+    .sectionOne .flexContainer{
+        flex-direction: row-reverse;
+    }
+    .sectionOne h3.big{
+        font-size: 2.5rem; 
+    }
+    .textCards{
+    width: 100%; 
+    margin-left: 5rem; 
+    }
+
+    .textCard{
+        max-width: 650px; 
+    }
+    .textCard, .textCard h3{
+        text-align: left; 
+    }
+    .textCard p{
+        font-size: 1.1rem; 
+        line-height: 1.7rem; 
+    }
+    .imgCard{
+        width: 100%; 
+        position: relative; 
+    
+    }
+    .sectionOne .imgCard img{
+        position: absolute; 
+        right: -250px; 
+        top: -150px; 
+        width: 800px; 
+    
+    }
+
+    .sectionTwo{
+        display: flex; 
+        align-items: center; 
+        width: 100%;  
+        padding: 5rem 2rem; 
+    }
+
+
+    .sectionTwo .imgCard{
+        position: relative; 
+        top: 0; 
+        left: 0; 
+        transform: translate(0);
+        width: 100%; 
+
+    }
+    .animationBox{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    }
+    .innerCircle, .outerCircle{ 
+        left: 20%; 
+    }
+    .innerCircle{
+        width: 300px; 
+        height: 300px; 
+    }
+    .outerCircle.one{
+        width: 380px; 
+        height: 380px; 
+    }
+    .outerCircle.two{
+        top: -30%; 
+        width: 480px; 
+        height: 480px; 
+    }
+   .sectionTwo .imgCard img{
+    position: absolute; 
+    transform: translateY(-45%) 
+    }
+    
+    .sectionThree{
+        margin: 15rem 0; 
+    }
+    .sectionThree .imgCard img{
+        position: absolute; 
+        left: -250px; 
+        top: -100px; 
+        width: 800px; 
+    
+    }
+}

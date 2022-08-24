@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --f-Ubuntu: "Ubuntu", sans-serif; 
+    --f-Overpass: "Overpass", sans-serif; 
+    --c-black: hsl(0, 0%, 0%);
+    --c-blue-dark16-10: hsl(240, 10%, 16%);
+    --c-blue-dark21-17: hsl(237, 17%, 21%);
+    --c-blue-dark24-49: hsl(208, 49%, 24%);
+    --c-blue-dark32-23: hsl(237, 23%, 32%);
+    --c-blue-dark34-13: hsl(207, 13%, 34%);
+    --c-blue-light79-2: hsl(240, 2%, 79%);
+    --c-blue: hsl(240, 100%, 50%);
+    --c-gray50: hsl(0, 0%, 50%);
+    --c-orange-light72-100: hsl(13, 100%, 72%);
+    --c-orange-mid50-100: hsl(39, 100%, 50%);
+    --c-red-light74-100: hsl(355, 100%, 74%);
+    --c-red: hsl(0, 100%, 50%);
+    --c-red-mid62-100: hsl(353, 100%, 62%);
+    --c-red-mid66-100: hsl(356, 100%, 66%);
+    --c-white: hsl(0, 0%, 100%);
+    }

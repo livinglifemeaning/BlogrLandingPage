@@ -1,0 +1,16 @@
+.subtitle {
+  font-family: "Overpass";
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.btnBox{
+    display: flex; 
+    width: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem; 
+    margin: 2rem 0 4rem; 
+}

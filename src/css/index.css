@@ -1,0 +1,13 @@
+@import "./header.css"; 
+@import "./body.css"; 
+@import "./footer.css"; 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+
